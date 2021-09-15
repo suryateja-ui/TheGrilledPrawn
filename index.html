@@ -70,9 +70,9 @@
                             </button>
                             <div class="sort-by">
                                 <span>Sort by</span>
-                                <select>
-                                    <option>Oldest first</option>
-                                    <option selected>Newest first</option>
+                                <select id="filter" onchange="changeByFilter()">
+                                    <option value="old">Oldest first</option>
+                                    <option value="new" selected>Newest first</option>
                                 </select>
 
                             </div>
@@ -178,139 +178,8 @@
             </section>
             <section>
                 <div class="page-content">
-                    <div class="recipe-grid">
-                        <div class="card grid-item">
-                            <div class="d-flex items-center content-between grid-lable">
-                                <div class="date">5TH MARCH 2016</div>
-                                <div class="type">THAI</div>
-                            </div>
-                            <div class="card-container">
-                                <p>Thai Yellow Curry Noodles with Shiitake Mushrooms</p>
-                            </div>
-                            <img src="./img/Thainoodles.png" alt="Avatar" style="width:100%">
-
-                        </div>
-                        <div class="card grid-item">
-                            <div class="d-flex items-center content-between grid-lable">
-                                <div class="date">17TH MARCH 2016</div>
-                                <div class="type">Italian</div>
-                            </div>
-                            <div class="card-container">
-                                <p>Cappellini with Cherry and Tomatoes and Fresh Basil</p>
-                            </div>
-                            <img src="./img/CherryAndTomatoes.png" alt="Avatar" style="width:100%">
-
-                        </div>
-                        <div class="card grid-item">
-                            <div class="d-flex items-center content-between grid-lable">
-                                <div class="date">4TH APRIL 2016</div>
-                                <div class="type">Italian</div>
-                            </div>
-                            <div class="card-container">
-                                <p>Baked Turkey Sausage and Mascarpone Stuffed Shells</p>
-                            </div>
-                            <img src="./img/BakedTurkey.png" alt="Avatar" style="width:100%">
-
-                        </div>
-                        <div class="card grid-item">
-                            <div class="d-flex items-center content-between grid-lable">
-                                <div class="date">24TH MAY 2016</div>
-                                <div class="type">Italian</div>
-                            </div>
-                            <div class="card-container">
-                                <p>Caramelised Apple and Herb Fiocchi</p>
-                            </div>
-                            <img src="./img/Caramelised Apple.png" alt="Avatar" style="width:100%">
-
-                        </div>
-                        <div class="card grid-item">
-                            <div class="d-flex items-center content-between grid-lable">
-                                <div class="date">25TH MARCH 2016</div>
-                                <div class="type">SPANISH</div>
-                            </div>
-                            <div class="card-container">
-                                <p>Pumpkin Beer Cheese Soup</p>
-                            </div>
-                            <img src="./img/PumpkinBeerSoup.png" alt="Avatar" style="width:100%">
-
-                        </div>
-                        <div class="card grid-item">
-                            <div class="d-flex items-center content-between grid-lable">
-                                <div class="date">22TH SEPTEMBER 2016</div>
-                                <div class="type">THAI</div>
-                            </div>
-                            <div class="card-container">
-                                <p>Yum Woon Sen With Shrimp(Glass noodle salad With Shrimp)</p>
-                            </div>
-                            <img src="./img/ShrimpSalad.png" alt="Avatar" style="width:100%">
-
-                        </div>
-                        <div class="card grid-item">
-                            <div class="d-flex items-center content-between grid-lable">
-                                <div class="date">14TH OCTOBER 2016</div>
-                                <div class="type">THAI</div>
-                            </div>
-                            <div class="card-container">
-                                <p>Beef Stay</p>
-                            </div>
-                            <img src="./img/recipe7.png" alt="Avatar" style="width:100%">
-
-                        </div>
-                        <div class="card grid-item">
-                            <div class="d-flex items-center content-between grid-lable">
-                                <div class="date">29TH OCTOBER 2016</div>
-                                <div class="type">French</div>
-                            </div>
-                            <div class="card-container">
-                                <p>Creamy French Onion Soup Dip in a Breed Bowl</p>
-                            </div>
-                            <img src="./img/BreadBowl.png" alt="Avatar" style="width:100%">
-
-                        </div>
-                        <div class="card grid-item">
-                            <div class="d-flex items-center content-between grid-lable">
-                                <div class="date">11TH NOVEMBER 2016</div>
-                                <div class="type">SPANISH</div>
-                            </div>
-                            <div class="card-container">
-                                <p>Bocadillo Bites</p>
-                            </div>
-                            <img src="./img/Bites.png" alt="Avatar" style="width:100%">
-
-                        </div>
-                        <div class="card grid-item">
-                            <div class="d-flex items-center content-between grid-lable">
-                                <div class="date">12TH NOVEMBER 2016</div>
-                                <div class="type">SPANISH</div>
-                            </div>
-                            <div class="card-container">
-                                <p>Paella</p>
-                            </div>
-                            <img src="./img/Paella.png" alt="Avatar" style="width:100%">
-
-                        </div>
-                        <div class="card grid-item">
-                            <div class="d-flex items-center content-between grid-lable">
-                                <div class="date">24TH DECEMBER 2016</div>
-                                <div class="type">THAI</div>
-                            </div>
-                            <div class="card-container">
-                                <p>Spicy black Bean Burger</p>
-                            </div>
-                            <img src="./img/BlackBeenBurger.png" alt="Avatar" style="width:100%">
-
-                        </div>
-                        <div class="card grid-item">
-                            <div class="d-flex items-center content-between grid-lable">
-                                <div class="date">9TH JANUARY 2017</div>
-                                <div class="type">Italian</div>
-                            </div>
-                            <div class="card-container">
-                                <p>Fresh Fig And Pistachio Salad</p>
-                            </div>
-                            <img src="./img/FigSalad.png" alt="Avatar" style="width:100%">
-
-                        </div>
+                    <div class="recipe-grid" id="grid">
+                       
                     </div>
                 </div>
 

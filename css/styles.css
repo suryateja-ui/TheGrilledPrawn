@@ -440,6 +440,7 @@ select::-ms-expand {
     color: #4a4a4a;
     font-weight: 300;
     font-family: "Roboto";
+    height: 85px;
 }
 
 .grid-item {
@@ -629,4 +630,8 @@ select::-ms-expand {
 
 .food-type {
     width: 20%;
+}
+
+.date {
+    text-transform: uppercase;
 }
